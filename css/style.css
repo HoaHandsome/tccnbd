@@ -405,7 +405,7 @@ footer span{
 
 /* introduce  */
 #home-introduce{
-    border-bottom: 10px solid rgb(8, 212, 248);
+    border-bottom: 10px solid #1468BB;
     padding-bottom: 20px;
     position: relative;
 }
@@ -417,7 +417,7 @@ footer span{
     border-radius: 50%;
     bottom: -20px;
     left: calc(50% - 15px);
-    background-color:rgb(8, 212, 248);
+    background-color:#1468BB;
 }
 
 #home-introduce h4{
