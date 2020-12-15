@@ -208,11 +208,10 @@ header i{
 #form-contact h6{
     color: white;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
 }
 #form-contact > div:first-child{
     width: 60%;
+    margin-right: 10px;
 }
 
 
@@ -943,4 +942,6 @@ footer span{
     span{
         font-size: 10px;
     }
+    #form-contact > div:first-child{
+    width: 50%;
 }
