@@ -446,6 +446,9 @@ footer span{
 #home-introduce p{
     text-align: justify;
 }
+#home-introduce ul li p{
+    text-align: center;
+}
 
 #home-introduce h4 > a{
     border-bottom: 5px solid #1468bb;
