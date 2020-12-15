@@ -295,7 +295,7 @@ header i{
     left: 0;
 }
 #menu .container > ul > li:hover .drop-down::after{
-    transform:rotate(270deg);
+    transform:rotate(-90deg);
 }
 #close{
     display: none;
@@ -340,7 +340,6 @@ footer span{
     color: white;
     text-align: center;
     height: 30px;
-    line-height: 30px;
 }
 
 
