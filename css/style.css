@@ -136,7 +136,7 @@ span{
 * === modal picture ===
 */
 
-    #modalPicture {
+#modalPicture {
   display: none; 
   justify-content: center;
   align-items: center;
@@ -346,7 +346,6 @@ footer span{
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: 25px 0;
   padding: 0;
 }
 
