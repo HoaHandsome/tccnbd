@@ -404,6 +404,21 @@ footer span{
 */
 
 /* introduce  */
+#home-introduce{
+    border-bottom: 10px solid rgb(8, 212, 248);
+    padding-bottom: 20px;
+    position: relative;
+}
+#home-introduce::after{
+    position: absolute;
+    content: " ";
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    bottom: -20px;
+    left: calc(50% - 15px);
+    background-color:rgb(8, 212, 248);
+}
 
 #home-introduce h4{
     text-align: center;
