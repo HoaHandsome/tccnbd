@@ -420,7 +420,7 @@ footer span{
     color: rgb(56, 43, 124);
 
 }
-#home-introduce  .group-item{
+/* #home-introduce  .group-item{
     position: relative;
     width: 22%;
     padding: 15px 0;
@@ -439,26 +439,18 @@ footer span{
     left: 0;
     border: 1px solid #005fab;
     z-index: -10;
-    border: 0.5px solid transparent;
     border-radius: 10px;
     transition: top 0.5s;
-}
+} */
 #home-introduce h6{
     margin-top: 20px;
     text-align: center;
 }
-#home-introduce a{
-    color: rgba(0,0,0,0.9);
-    text-align: center;
-}
-#home-introduce .group-item:hover a{
-    color: white;
-}
-#home-introduce .group-item:hover::before{
-    top: 0;
-}
+
+
 #home-introduce i{
     font-size: 45px;
+    color: white;
 }
 
 
@@ -466,6 +458,72 @@ footer span{
     color: blue;
     margin: 0 5px;
 }
+
+/* list item */
+#group-list-introduce > div {
+    width: 22%;
+    border:1px solid #717171;   
+}
+#group-list-introduce > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18.5px 0.5px #5e5b5bb8;
+}
+
+
+#group-list-introduce > div > div:first-child{
+    background-color: #F5A623;
+    padding: 30px 0;
+    /* title */
+}
+#group-list-introduce > div > div a {
+ color: white;
+ margin-top: 10px;
+ text-align: center;
+ display: block;
+ background-color: #F5A623;
+ padding: 5px 0;
+}
+
+
+.container-list-introduce{
+    padding: 10px;
+}
+.container-list-introduce li{
+    list-style: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+.container-list-introduce li p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+#group-list-introduce > div:nth-child(2) > div:first-child{
+    background-color: #F64D4D;
+}#group-list-introduce > div:nth-child(2)  a{
+    background-color: #F64D4D;
+}
+#group-list-introduce > div:nth-child(3) > div:first-child{
+    background-color: #30DBB5;
+}#group-list-introduce > div:nth-child(3)  a{
+    background-color: #30DBB5;
+}
+
+#group-list-introduce > div:nth-child(4) > div:first-child{
+    background-color: #5ba5fe;
+}#group-list-introduce > div:nth-child(4)  a{
+    background-color: #5ba5fe;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 * === menu content left===
