@@ -32,7 +32,7 @@ pictures.forEach(img => {
 
 /*
 function openForm() {
-    document.getElementById('blog-form-search').style.display="none";
+    document.getElementById('blog-form-contact').style.display="none";
     document.getElementById('blog-form').style.display="block";
 } */
 
@@ -61,18 +61,18 @@ function showSlides() {
 
 /* open form search */
 function openSearchForm() {
-    document.getElementById('open-form-search').style.display ="none";
-    document.getElementById('close-form-search').style.display ="block";
-    document.getElementById('form-search').style.display ="block";
+    document.getElementById('open-form-contact').style.display ="none";
+    document.getElementById('close-form-contact').style.display ="block";
+    document.getElementById('form-contact').style.display ="flex";
     setTimeout(() => {
-        document.getElementById('form-search').style.maxHeight ="600px";
+        document.getElementById('form-contact').style.maxHeight ="600px";
     }, 5);
 }
 function closeSearchForm() {
-    document.getElementById('open-form-search').style.display ="block";
-    document.getElementById('close-form-search').style.display ="none";
-    document.getElementById('form-search').style.display ="none";
-    document.getElementById('form-search').style.maxHeight ="0";
+    document.getElementById('open-form-contact').style.display ="block";
+    document.getElementById('close-form-contact').style.display ="none";
+    document.getElementById('form-contact').style.display ="none";
+    document.getElementById('form-contact').style.maxHeight ="0";
 }
 
 /* responsive menu */

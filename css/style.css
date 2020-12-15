@@ -170,10 +170,9 @@ span{
 
 
 header{
-    background-color: #302255;
+    background-color: #393939;
 }
-header #form-search{
-   max-width: 600px;
+header #form-contact{
    margin: 0 auto;
    padding: 10px;
    display: none;
@@ -181,7 +180,7 @@ header #form-search{
    max-height: 0;
    transition: 2s;
 }
-#close-form-search{
+#close-form-contact{
     display: none;
 }
 header h5 a,header label{
@@ -192,6 +191,28 @@ header i{
 }
 #logo img{
     max-height: 30px;
+}
+
+#form-contact p{
+    color:#6c757d;
+    size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+#form-contact a{
+    color:#ffffff;
+    size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+#form-contact h6{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+#form-contact > div:first-child{
+    width: 60%;
 }
 
 
@@ -907,4 +928,16 @@ footer span{
     .container-list-introduce li {
     list-style: none;
     padding: 0}
+     h6{
+        font-size: 14px;
+    }
+     h5{
+        font-size: 15px;
+    }
+     p{
+        font-size: 10px;
+    }
+    a{
+        font-size: 10px;
+    }
 }
