@@ -437,7 +437,7 @@ footer span{
     width: 100%;
     top: -100%;
     left: 0;
-    background-color: rgb(24, 0, 245);
+    border: 1px solid #005fab;
     z-index: -10;
     border: 0.5px solid transparent;
     border-radius: 10px;
