@@ -819,8 +819,12 @@ footer span{
         display: flex;
         flex-wrap: wrap;
     }
-    #home-introduce .group-item{
-        width: 50%;
+   #group-list-introduce > div {
+    width: 45%; 
+    margin: 10px 0;
+    }
+    #group-list-introduce > div > div:first-child{
+    padding: 10px 0;
     }
     #scroll-to-top div {
     height: 30px;
@@ -885,4 +889,7 @@ footer span{
     line-height: 25px;}
     #menu .container> ul {
     top: 43px;}
+    .container-list-introduce li {
+    list-style: none;
+    padding: 0}
 }
