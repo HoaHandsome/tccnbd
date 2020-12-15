@@ -529,14 +529,8 @@ footer span{
 .home-news img{
     width: 100%;
     height: 100%;
-    transition: transform 0.5s;
+    z-index: -1000;
 }
-.home-news li div:first-child:hover >img{
-    transform: scale(1.5);
-
-}
-
-
 .home-news ul li{
     position: relative;
     margin-bottom: 10px;
