@@ -649,12 +649,14 @@ footer span{
     line-height: 20px;
     color: #222b45;
     font-weight: 400;
+     text-align: justify;
 }
 .home-news div h6 a{
     size: 18px;
     color: #130e0e;
     line-height: 25px;
     font-weight: 600;
+     text-align: justify;
 }
 .home-news > h6 a{
     size: 18px;
@@ -662,6 +664,7 @@ footer span{
     line-height: 25px;
     font-weight: 400; /* this is title */
     position: relative;
+    text-align: justify;
 }
 .home-news > h6::after {
     content: "";
