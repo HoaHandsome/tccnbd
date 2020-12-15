@@ -926,22 +926,24 @@ footer span{
     top: 43px;}
     .container-list-introduce li {
     list-style: none;
-    padding: 0}
-     h6{
+    padding: 0;
+}
+     header h6{
         font-size: 14px;
     }
-     h5{
+     header h5{
         font-size: 15px;
     }
-     p{
+     header p{
         font-size: 10px;
     }
-    a{
+    header a{
         font-size: 10px;
     }
-    span{
+    header span{
         font-size: 10px;
     }
     #form-contact > div:first-child{
     width: 50%;
+    }
 }
