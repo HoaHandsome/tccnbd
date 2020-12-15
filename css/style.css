@@ -590,6 +590,7 @@ footer span{
     border-bottom: 1px solid #717171;
     padding: 10px 0;
 } */
+/*  */
 .article span{
     font-size: 12px;
     line-height: 17px;
@@ -600,6 +601,13 @@ footer span{
     text-align: justify;
 }
 /*  */
+.more-articles{
+    margin-top: 10px;
+}
+.more-articles > div{
+    margin: 7px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
 
 .category{
     display: flex;
@@ -619,7 +627,15 @@ footer span{
     text-align: justify;
 }
 
+/* danh muc categories */
+.categories > div{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0;
 
+}
+.categories > div > h5{
+    margin: 0;
+}
 
 
 
