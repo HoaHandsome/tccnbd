@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----------------------font icon  ------>
+<script src="https://kit.fontawesome.com/66e5d31267.js" crossorigin="anonymous"></script>
+    <!-----------------------bootstrap 4------>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+        <!-- social contact -->
+        <div id="social-contact" class="flex-column">
+            <p>CONTACT</p>
+            <div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+            <div><a href="#"><i class="far fa-envelope"></i></a></div>
+        </div>
+        <!-- end social contact -->
+
+        <!-- scroll to top -->
+        <div id="scroll-to-top">
+            <div>
+                <a href="#top"><i class="fas fa-angle-up"></i></a>
+
+            </div>
+        </div>
+        <!-- end top scroll -->
+
+        <!-- modal -->
+        <div id="modalPicture" onclick="modal">
+            <img alt="" id="contentModal">
+        </div>
+
+
+
+
+
+<div id="top"></div>
+<header>
+    <div id="form-search">
+        <form>
+            <div class="form-group row">
+                <label for="contentsearch" class="col-sm-5 col-form-label">Noi dung tim kiem</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="contentsearch" value="" placeholder="Nhap noi dung tim kiem">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="article" class="col-sm-5 col-form-label">Lựa chọn kiểu tìm kiếm</label>
+                <div class="col-sm-7">
+                    <select class="form-control" id="article" >
+                        <option>Tat ca noi dung</option>
+                        <option>Tat ca noi dung</option>
+                        <option>Tat ca noi dung</option>
+                        <option>Tat ca noi dung</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="category" class="col-sm-5 col-form-label">Tìm kiếm trong chủ đề</label>
+                <div class="col-sm-7">
+                    <select class="form-control" id="category" >
+                        <option>Tìm kiếm trong chủ đề</option>
+                        <option>Tìm kiếm trong chủ đề</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Tim kiem</button>
+        </form>
+    
+    </div>
+    <div class="container flex-center center">
+        <h5>
+            
+            <a href="#">Trường trung cấp công nghiệp Bình Dương </a>
+        </h5>
+        <div id="open-form-search" onclick="openSearchForm()">
+
+            <i class="fas fa-search" style="color: white;"></i>
+        </div>
+        <div id="close-form-search"  onclick="closeSearchForm()">
+
+            <i class="fas fa-times" style="color: white;"></i>
+        </div>
+        </div>
+    </header>
+
+    <!-- menu -->
+   <div id="menu">
+       <div class="container-fluid flex-center">
+           <a href="#"><i class="fas fa-home"></i></a>
+           <ul>
+               <li><a href="#">Trang chu</a></li>
+               <li><a href="#">Giới thiệu</a></li>
+               <li><a href="#" class="drop-down">Cơ cấu tổ chức</a>
+            <ul>
+                <li><a href="#">Trung Cap Chinh Quy</a></li>
+                <li><a href="#">Lien Thong Cao Dang</a></li>
+                <li><a href="#">Lien Thong Dai Hoc</a></li>
+                <li><a href="#">Chuong Trinh Dao Tao</a></li>
+            </ul></li>
+               <li><a href="#" class="drop-down">Đào tạo</a>
+                <ul>
+                    <li><a href="#">Trung Cap Chinh Quy</a></li>
+                    <li><a href="#">Lien Thong Cao Dang</a></li>
+                    <li><a href="#">Lien Thong Dai Hoc</a></li>
+                    <li><a href="#">Chuong Trinh Dao Tao</a></li>
+                </ul>   
+              </li>
+               <li><a href="#">Tuyển sinh</a></li>
+               <li><a href="#">Thời khóa biểu</a></li>
+               <li><a href="#">Đăng kí xét tuyển</a></li>
+               <li><a href="#">Liên hệ</a></li>
+           </ul>
+        <i class="fas fa-times" id="close" onclick="closeResponsiveMenu()"></i>
+        <i class="fas fa-bars" id="bars" onclick="openResponsiveMenu()"></i>
+       </div>
+   </div>
+   <!-- end menu -->
+
+
+   <!-- slide -->
+   <div id="hero">
+       <div class="container-fluid">
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <a href="#">
+            <img src="../img/tuyensinh.jpg" style="width:100%">
+        </a>
+        <div class="text"><a href="#">Trường TCCN bình dương tổ chức </a></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <a href="#">
+            <img src="../img/tuyensinh2.jpg" style="width:100%">
+            
+        </a>
+        <div class="text"><a href="#">Trường TCCN bình dương tổ chức </a></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <a href="#">
+            <img src="../img/tuyensinh.jpg" style="width:100%">
+        </a>
+        <div class="text"><a href="#">Trường TCCN bình dương tổ chức </a></div>
+    </div>
+
+    <div style="text-align:center" id="dot-group">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+       </div>
+   </div>
+<!-- end slide -->
+
+
+<!-- content -->
+
+
+   <div id="home-content">
+
+       <div class="container flex">
+           <!-- left content 75%  -->
+           <div id="home-content-left">
+
+               <!-- news content -->
+               <div class="home-news">
+                   <div class="category">
+                       <h5><a href="#"><i class="fas fa-home"></i></a></h5> 
+                <i class="fas fa-angle-double-right"></i>
+                        <h6><a href="#">Gioi thieu</a></h6>
+                    </i>
+                   </div>
+
+                   <h6>Trường TRung Cấp Công Ngiệp Bình Dương</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <img src="../img/school.jpg" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <span>Monday 25/11/2046</span>
+                            <ul>
+                                <li><a href="#">Gioi thieu ve truong</a></li>
+                                <li><a href="#">Gioi thieu ve truong</a></li>
+                                <li><a href="#">Gioi thieu ve truong</a></li>
+                            </ul>
+               </div>
+               <!-- end news content -->
+           </div>
+          <!-- End home left content 75% -->
+
+          <!-- home content right -->
+          <div id="home-content-right">
+              <div class="flex-column">
+
+                  <div>
+                      <h6>Bản đồ</h6>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.8313483978063!2d106.73792971480181!3d10.900418692237457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa754495eeb43247!2zVHLGsOG7nW5nIFRydW5nIEPhuqVwIEPDtG5nIE5naGnhu4dwIELDrG5oIETGsMahbmc!5e0!3m2!1svi!2s!4v1607836740711!5m2!1svi!2s"
+                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                  </div>
+                   <div>
+                       <h6>Đăng ký nhập học</h6>
+                       <a href="#">
+                           <img src="../img/dangky.jpg" alt="">
+                       </a>
+                   </div>
+                    <div>
+                        <h6>Quảng cáo</h6>
+                        <a href="#">
+                                <img src="../img/ads.jpg" alt="">
+                        </a>
+                    </div>
+<!--                    <div>
+                       <h6>Thống kê truy cập</h6>
+                       <ul>
+                           <li><p>Dang truy cap :</p><span>3</span></li>
+                           <li><p>May chu tim kiem :</p><span>4</span></li>
+                           <li><p>Khach vien tham :</p><span>4</span></li>
+                           <li><p>Hom nay :</p><span>4</span></li>
+                           <li><p>Thang nay :</p><span>4</span></li>
+                           <li><p>Tong lượt truy cập :</p><span>4</span></li>
+                       </ul>
+                   </div> -->
+              </div>
+              <!-- end home content right -->
+           </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+       
+       <footer>
+           <div class="container-fluid flex-center">
+               <!-- about us -->
+               <div class="flex-column">
+                   <h5>Trường Trung Cấp Công nghiệp Bình Dương</h5>
+                   <div>
+                       <p><span>Địa chỉ:</span> Đường DT 743, KCN Sóng Thần, Bình Hòa, Thuận An, Bình Dương</p>
+                   </div>
+                   <div>
+                       <p><span>Phone:</span><a href="tel:+">6280175</a>- <a href="tel:+">6280175</a></p>
+
+                   </div>
+                   <div>
+                       <p><span>Mail:</span><a href="mailto:truongtccnbd@gmail.com">truongtccnbd@gmail.com</a></p>
+
+                   </div>
+                   <div>
+                       <p><span>Chiu trach nhiem noi dung:</span>TS. Vũ Minh Hùng, Hiệu Trưởng, Kiêm Chủ tịch HĐQT</p>
+                       
+                   </div>
+                </div>
+                
+                <!-- author -->
+                <div class="flex-column">
+                    <h5>Tác giả</h5>
+                    <div>
+                        <span>Design by: </span><a href="#">Trai Nguyen</a>
+                    </div>
+                    <div>
+                        <span>Website: </span><a href="#">TraiNguyen.net</a>
+                    </div>
+                    <div>
+                        <span>Support FrontEnd: </span><a href="#">Student VanHoa</a>
+                    </div>
+                    <div>
+                        <span>Website: </span><a href="#">Levanhoa.com</a>
+                    </div>
+    
+               </div>
+              </div>
+       </div>
+
+       <!-- license (ban quyen) -->
+       <div id="license">
+            © 2020 Bản quyền thuộc về Trường Trung Cap cong nghiep Binh dương.
+       </div>
+   </footer>
+
+</body>
+<script src="../js/script.js"></script>
+</html>
