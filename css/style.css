@@ -591,6 +591,9 @@ footer span{
     padding: 10px 0;
 } */
 /*  */
+.article{
+    border-bottom: 15px solid #ddd;
+}
 .article span{
     font-size: 12px;
     line-height: 17px;
@@ -637,9 +640,123 @@ footer span{
     margin: 0;
 }
 
+/* table in article */
+.list-table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.list-table td, .list-table th{
+    border: 1px solid #ddd;
+  padding: 8px;
+}
+.list-table tr:nth-child(even){
+    background-color: #f2f2f2;}
+.list-table tr:hover{
+    background: #ddd;
+}
+.list-table th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#6b6fd1;
+  color: white;
+  
+}
+/* registration */
+.title-registration{
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+/* form registration */
+.article form{
+    padding: 20px;
+    border: 1px solid #dddcdc;
+    margin-bottom: 10px;
+}
+.article form h2{
+    line-height: 1.66;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: #222;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.article form label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+.article form input{
+    display: block;
+    width: 100%;
+    border: 1px solid #dddcdc;
+    padding: 11px 20px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.article form select{
+    display: block;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    padding: 11px 20px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.form-group {
+    width: 100%;
+    margin: 10px 0;
+    margin-bottom: 23px;
+    position: relative;
+}
+.form-row {
+     margin: 0 -15px;
+}
+.form-row .form-group {
+    display: inline-block;
+    width: calc(50% - 2px);
+    padding: 0 15px;
+    margin-bottom: 23px;
+    position: relative;
+}  
+.form-submit{
+    text-align: right;
+    padding-top: 27px;
+} 
+#reset {
+    background: #DDDDDD;
+    color: #999;
+    margin-right: 8px;
+}
+#submit {
+    background: #ff6801;
+    color: #fff;
+}
+
+.submit {
+    width: 140px !important;
+    height: 40px !important;
+    display: inline-block !important;
+    font-weight: 400 !important;
+    font-size: 13px;
+    padding: 10px;
+    border: none !important;
+    cursor: pointer !important;
+    text-align: center  ;
+}    
 
 
 
+/*  */
 
 
 

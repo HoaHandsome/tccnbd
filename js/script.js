@@ -93,3 +93,7 @@ function closeResponsiveMenu() {
    document.getElementById('close').style.display="none";
     document.getElementById('bars').style.display ="inline-block";
 }
+/* reset form */
+function resetForm() {
+        document.getElementById('register-form').reset();
+}

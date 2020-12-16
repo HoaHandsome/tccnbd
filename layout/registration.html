@@ -10,25 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-----------------------font icon  ------>
     <script src="https://kit.fontawesome.com/66e5d31267.js" crossorigin="anonymous"></script>
-    <!-----------------------bootstrap 4------>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
+
 
 
     <title>Document</title>
 </head>
 
 <body>
-
+ 
     <!-- social contact -->
     <div id="social-contact" class="flex-column">
         <p>CONTACT</p>
@@ -115,9 +105,9 @@
                 <li><a href="./list.html" class="drop-down">Cơ cấu tổ chức</a>
                     <ul>
                         <li><a href="./introduct.html">Trung Cap Chinh Quy</a></li>
-                        <li><a  href="./introduct.html">Lien Thong Cao Dang</a></li>
-                        <li><a  href="./introduct.html">Lien Thong Dai Hoc</a></li>
-                        <li><a  href="./introduct.html">Chuong Trinh Dao Tao</a></li>
+                        <li><a href="./introduct.html">Lien Thong Cao Dang</a></li>
+                        <li><a href="./introduct.html">Lien Thong Dai Hoc</a></li>
+                        <li><a href="./introduct.html">Chuong Trinh Dao Tao</a></li>
                     </ul>
                 </li>
                 <li><a href="./list.html" class="drop-down">Đào tạo</a>
@@ -158,34 +148,103 @@
                     </div>
 
                     <!-- view category list -->
-                    
-                    <div class="categories">
-                        <div class="flex-column">
-                            <h5><a href="#">Ban Giám hiệu</a></h5>
-                            <p>Đăng lúc: 13-07-2013 03:34:06 PM | <span>Đã xem</span> 3000</p>
-                        </div>
-                        <div class="flex-column">
-                            <h5><a href="#">Ban Giám hiệu</a></h5>
-                            <p>Đăng lúc: 13-07-2013 03:34:06 PM | <span>Đã xem</span> 3000</p>
-                        </div>
-                        <div class="flex-column">
-                            <h5><a href="#">Ban Giám hiệu</a></h5>
-                            <p>Đăng lúc: 13-07-2013 03:34:06 PM | <span>Đã xem</span> 3000</p>
-                        </div>
-                        <div class="flex-column">
-                            <h5><a href="#">Ban Giám hiệu</a></h5>
-                            <p>Đăng lúc: 13-07-2013 03:34:06 PM | <span>Đã xem</span> 3000</p>
-                        </div>
-                        <div class="flex-column">
-                            <h5><a href="#">Ban Giám hiệu</a></h5>
-                            <p>Đăng lúc: 13-07-2013 03:34:06 PM | <span>Đã xem</span> 3000</p>
-                        </div>
-                        <div class="flex-column">
-                            <h5><a href="#">Ban Giám hiệu</a></h5>
-                            <p>Đăng lúc: 13-07-2013 03:34:06 PM | <span>Đã xem</span> 3000</p>
-                        </div>
+                <div   class="title-registration">
+                    Đăng ký xét tuyển
+                </div>
 
-                    </div>
+                <div >
+                            <form method="POST" class="register-form" id="register-form">
+                                <h2>Form đăng ký học cho sinh viên.</h2>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="name">Họ và tên :</label>
+                                        <input type="text" name="hoten" id="name" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="birth_date">Ngày sinh :</label>
+                                        <input type="text" name="ngaysinh" id="birth_date">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Địa chỉ :</label>
+                                    <input type="text" name="noisinh" id="address" required />
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="identity">Số CMND :</label>
+                                        <input type="text" name="cmnd" id="identity" required />
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <label for="phone">Số điện thoại :</label>
+                                        <input type="text" name="dienthoai" id="phone">
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email :</label>
+                                    <input type="email" name="email" id="email" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="degree">Trình độ học vấn :</label>
+                                    <div class="form-select">
+                                        <select name="totnghiep" id="degree">
+                                            <option value=""></option>
+                                            <option value="Tốt Nghiệp Cấp 2">Tốt nghiệp Cấp 2</option>
+                                            <option value="Tốt Nghiệp Cấp 3">Tốt nghiệp cấp 3</option>
+                                            <option value="Tốt nghiệp Trung Cấp">Tốt nghiệp Trung Cấp</option>
+                                            <option value="Tốt nghiệp Trung Cấp">Tốt nghiệp Cao Đẳng</option>
+                                        </select>
+                                        <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="school">Tốt Nghiệp Tại Trường :</label>
+                                    <input type="text" name="truong" id="school">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="educational-system">Hệ đào tạo :</label>
+                                    <div class="form-select">
+                                        <select name="hexettuyen" id="educational-system">
+                                            <option value=""></option>
+                                            <option value="0">Tốt nghiệp Cấp 2</option>
+                                            <option value="1">Trung cấp chính quy</option>
+                                            <option value="2">Liên thông cao đẳng</option>
+                                            <option value="3">Liên thông đại học</option>
+                                        </select>
+                                        <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="majors">Hệ đào tạo :</label>
+                                    <div class="form-select">
+                                        <select name="chuyennganh" id="majors">
+                                            <option value=""></option>
+                                            <option value="Công Nghệ Thông Tin">Công Nghê Thông Tin</option>
+                                            <option value="Kế Toán">Kế Toán</option>
+                                            <option value="Mầm Non">Mầm Non</option>
+                                            <option value="Cơ Điện">Cơ Điện</option>
+                                        </select>
+                                        <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="accommodation">Nơi cư trú :</label>
+                                    <input type="text" name="noicutru" id="accommodation">
+                                </div>
+                                <div class="form-submit">
+                                    <div class="submit" id="reset" onclick="resetForm()">Reset All</div>
+                                    <input type="submit" value="Đăng ký" class="submit" name="submit" id="submit" />
+                                </div>
+                            </form>
+                            <div class="title-registration">
+                                Form đăng ký của các bạn sẽ được gởi đến phòng tư vấn tuyển sinh. Chúng tôi sẽ phúc đáp trong thời gian sớm nhất.
+                                Xin chân thành cảm ơn.
+                            </div>
+
+                </div>
 
                 </div>
             </div>
