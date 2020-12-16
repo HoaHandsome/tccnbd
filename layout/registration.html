@@ -5,27 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- modal alert  -->
     <link rel="stylesheet" href="../css/alertify.css">
     <link rel="stylesheet" href="../css/alertify.rtl.css">
+    <link rel="stylesheet" href="../css/themes/bootstrap.css">
+    <link rel="stylesheet" href="../css/themes/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../css/themes/default.rtl.css">
+    <link rel="stylesheet" href="../css/themes/default.min.css">
+    <link rel="stylesheet" href="../css/themes/default.rtl.min.css">
+    <link rel="stylesheet" href="../css/themes/semantic.css">
+    <link rel="stylesheet" href="../css/themes/semantic.rtl.min.css">
+
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-----------------------font icon  ------>
     <script src="https://kit.fontawesome.com/66e5d31267.js" crossorigin="anonymous"></script>
 
-
-
-
-    <title>Document</title>
+<link rel="icon" type="image/x-icon" href="../img/logo.png">
+<title>Trường Trung cấp Công nghiệp Bình Dương</title>
 </head>
 
 <body>
- 
+
     <!-- social contact -->
     <div id="social-contact" class="flex-column">
         <p>CONTACT</p>
-        <div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
-        <div><a href="#"><i class="far fa-envelope"></i></a></div>
+        <div><a href="https://www.facebook.com/bdi.edu.vn"><i class="fab fa-facebook-f"></i></a></div>
+        <div><a href="mailto:truongtccnbd@gmail.com"><i class="far fa-envelope"></i></a></div>
     </div>
     <!-- end social contact -->
 
@@ -45,15 +52,6 @@
     </div>
 
 
-    <div id="dialogbox">
-  <div>
-    <div id="dialogboxhead"></div>
-    <div id="dialogboxbody"></div>
-    <div id="dialogboxfoot"></div>
-  </div>
-</div>
-
-
 
 
     <div id="top"></div>
@@ -66,26 +64,28 @@
             </div>
             <div>
                 <h6>Liên hệ</h6>
-                <a href="#">Follow chúng tôi trên FaceBook</a>
+                <a href="https://www.facebook.com/bdi.edu.vn">Follow chúng tôi trên FaceBook</a>
                 <div>
 
-                    <a href="#">Gửi tin nhắn cho chúng tôi</a>
+                    <a href="tel:+02746280176">
+                        Liên hệ qua số điện thoại
+                    </a>
                 </div>
                 <div>
 
-                    <a href="#">Liên hệ qua mail</a>
+                    <a href="mailto:truongtccnbd@gmail.com">Liên hệ qua mail</a>
                 </div>
             </div>
 
 
         </div>
         <div class="container flex-center center">
-            <h5 id="logo">
+            <h5 id="logo" class="center">
                 <a href="#">
                     <img src="../img/logo.png" alt="">
 
                 </a>
-                <a href="#">TRƯỜNG TRUNG CẤP CÔNG NGHIỆP BÌNH DƯƠNG </a>
+                <a href="https://hoahandsome.github.io/tccnbd/">TRƯỜNG TRUNG CẤP CÔNG NGHIỆP BÌNH DƯƠNG </a>
 
             </h5>
             <div id="open-form-contact" onclick="openSearchForm()">
@@ -104,40 +104,40 @@
 
 
 
+<!-- menu -->
+<div id="menu">
+    <div class="container flex-center">
+        <a href="../index.html"><i class="fas fa-home"></i></a>
+        <ul>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="./introduct.html">Giới thiệu</a></li>
+            <li><a href="./list.html" class="drop-down">Cơ cấu tổ chức</a>
+                <ul>
+                    <li><a href="./administrators.html">Ban giám hiệu</a></li>
+                    <li><a href="./administrators.html">Các phòng ban chức năng</a></li>
+                    <li><a href="./administrators.html">Các khoa bộ môn</a></li>
 
-    <!-- menu -->
-    <div id="menu">
-        <div class="container flex-center">
-            <a href="#"><i class="fas fa-home"></i></a>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="./introduct.html">Giới thiệu</a></li>
-                <li><a href="./list.html" class="drop-down">Cơ cấu tổ chức</a>
-                    <ul>
-                        <li><a href="./introduct.html">Trung Cap Chinh Quy</a></li>
-                        <li><a href="./introduct.html">Lien Thong Cao Dang</a></li>
-                        <li><a href="./introduct.html">Lien Thong Dai Hoc</a></li>
-                        <li><a href="./introduct.html">Chuong Trinh Dao Tao</a></li>
-                    </ul>
-                </li>
-                <li><a href="./list.html" class="drop-down">Đào tạo</a>
-                    <ul>
-                        <li><a href="./introduct.html">Trung Cap Chinh Quy</a></li>
-                        <li><a href="./introduct.html">Lien Thong Cao Dang</a></li>
-                        <li><a href="./introduct.html">Lien Thong Dai Hoc</a></li>
-                        <li><a href="./introduct.html">Chuong Trinh Dao Tao</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Tuyển sinh</a></li>
-                <li><a href="#">Thời khóa biểu</a></li>
-                <li><a href="#">Đăng kí xét tuyển</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
-            <i class="fas fa-times" id="close" onclick="closeResponsiveMenu()"></i>
-            <i class="fas fa-bars" id="bars" onclick="openResponsiveMenu()"></i>
-        </div>
+                </ul>
+            </li>
+            <li><a href="./list.html" class="drop-down">Đào tạo</a>
+                <ul>
+                    <li><a href="./introduct.html">Trung Cap Chinh Quy</a></li>
+                    <li><a href="./introduct.html">Lien Thong Cao Dang</a></li>
+                    <li><a href="./introduct.html">Lien Thong Dai Hoc</a></li>
+                    <li><a href="./introduct.html">Chuong Trinh Dao Tao</a></li>
+                </ul>
+            </li>
+            <li><a href="./list.html">Tuyển sinh</a></li>
+            <li><a href="./schedule.html">Thời khóa biểu</a></li>
+            <li><a href="./registration.html">Đăng kí xét tuyển</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
+        </ul>
+        <i class="fas fa-times" id="close" onclick="closeResponsiveMenu()"></i>
+        <i class="fas fa-bars" id="bars" onclick="openResponsiveMenu()"></i>
     </div>
-    <!-- end menu -->
+</div>
+<!-- end menu -->
+
     
     <!-- content -->
     
@@ -244,30 +244,24 @@
                                     <label for="accommodation">Nơi cư trú :</label>
                                     <input type="text" name="noicutru" id="accommodation" placeholder="Phường A, Huyện B, Thành Phố C">
                                 </div>
+                                <div class="form-row">
+                                
+                                    <div class="form-group">
+                                        <label for="spam">Mã chống spam</label>
+                                        <input type="text" name="femail_iavim" id="spam">
+                                    </div>
+                                    <div class="form-group center">
+                                        <img src="../img/ads.jpg" alt="">
+                                    </div>
+                                
+                                </div>
                                 <div class="form-submit">
-                                    <div class="submit" id="reset" onclick="resetForm()">Reset All</div>
-                                    <input type="submit" value="Đăng ký" class="submit" name="submit" id="submit" />
+                                    
+                                    <input type="reset" value="Reset Form" class="submit" id="reset">
+                                    <input type="submit" value="Đăng ký" class="submit" name="submit" id="submit" >
                                 </div>
                             </form>
-                            <div id="la" >
-                            
-                                Cảm ơn bạn đã đăng ký.
-                            
-                                Copyright (c) 2020 Trường Trung Cấp Công Nghiệp Bình Dương
-                            
-                               Cảm ơn bạn đã đăng ký. Chúng tôi sẽ cố gắng liên hệ với bạn sớm nhất có thể.
-                               Chúng tôi tin rằng lựa chọn hôm nay của bạn hoàn toàn là chính xác. Với trang
-                               thiết bị cũng như một độ ngũ giàu kinh nghiệm trong việc giảng dạy. Chúng tôi
-                               sẽ giúp chắp cánh cho con đường học vấn cũng như sẽ là môi trường tạo tiền đề
-                               cho bạn đi xa hơn nữa trong tương lai.
-                               
-                               Đội ngũ ban giám hiệu nhà trường.
 
-                             NẾU CÓ VẤN ĐỀ VỀ SỰ CỐ DẪN TỚI VIỆC LIÊN LẠC CHO BẠN BỊ CHẬM TRỄ, BẠN CÓ THỂ LIÊN HỆ TRỰC
-                             TIẾP VỚI CHÚNG TÔI QUA SỐ HOTLINE (0274) 6280176 HOẶC BẠN CÓ THỂ LIÊN HỆ QUA FACEBOOK HOẶC
-                             ĐẾN TRỰC TIẾP TRUNG TÂM TRƯỜNG ĐỂ CÓ THỂ NGHE TƯ VẤN VÀ BIẾT THÊM VỀ CHƯƠNG TRÌNH HỌC.
-                             THÂN ÁI.
-                            </div>
                             <div class="title-registration" onclick="test()">
                                 Form đăng ký của các bạn sẽ được gởi đến phòng tư vấn tuyển sinh. Chúng tôi sẽ phúc đáp trong thời gian sớm nhất.
                                 Xin chân thành cảm ơn.
@@ -329,6 +323,8 @@
             </div>
         </div>
     </div>
+
+
     <footer>
         <div class="container flex-center">
             <!-- about us -->
@@ -338,45 +334,51 @@
                     <p><span>Địa chỉ:</span> Đường DT 743, KCN Sóng Thần, Bình Hòa, Thuận An, Bình Dương</p>
                 </div>
                 <div>
-                    <p><span>Phone:</span><a href="tel:+">6280175</a>- <a href="tel:+">6280175</a></p>
-
+                    <p><span>Phone:</span><a href="tel:+02746280176">(0274) 6280176 - 6280175 </a>- <a
+                            href="tel:+">6280175</a></p>
+    
+                </div>
+                <div>
+                    <p><span>Fax:</span>
+                    <p> (0274) 6280091 </p>
+    
                 </div>
                 <div>
                     <p><span>Mail:</span><a href="mailto:truongtccnbd@gmail.com">truongtccnbd@gmail.com</a></p>
-
+    
                 </div>
                 <div>
                     <p><span>Chiu trach nhiem noi dung:</span>TS. Vũ Minh Hùng, Hiệu Trưởng, Kiêm Chủ tịch HĐQT</p>
-
+    
                 </div>
             </div>
-
+    
             <!-- author -->
             <div class="flex-column">
                 <h5>Tác giả</h5>
                 <div>
-                    <span>Design by: </span><a href="#">Trai Nguyen</a>
+                    <span>Thiết kế bởi: </span><a href="mailto:mrtraibp@gmail.com">Nguyễn Văn Trãi</a>
                 </div>
                 <div>
-                    <span>Website: </span><a href="#">TraiNguyen.net</a>
+                    <span>Website: </span><a href="http://Trainguyen.net">TraiNguyen.net</a>
                 </div>
                 <div>
-                    <span>Support FrontEnd: </span><a href="#">Student VanHoa</a>
+                    <span>Support FrontEnd: </span><a href="mailto:lehoa.strong@gmail.com">student Văn Hòa</a>
                 </div>
                 <div>
-                    <span>Website: </span><a href="#">Levanhoa.com</a>
+                    <span>Website: </span><a href="http://Levanhoa.com">Levanhoa.com</a>
                 </div>
-
+    
             </div>
         </div>
         </div>
-
+    
         <!-- license (ban quyen) -->
-        <div id="license">
-            <p>© 2020 - Trường Trung Cấp Công Nghiệp Bình Dương | All rights reserved.</p>
-
-        </div>
     </footer>
+    <div id="license" class="center">
+        <p>© 2020 - Trường Trung Cấp Công Nghiệp Bình Dương | All rights reserved.</p>
+    
+    </div>
 
 </body>
 <script src="../js/alertify.js"></script>

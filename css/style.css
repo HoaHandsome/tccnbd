@@ -53,7 +53,7 @@ alert{
 .container{
     max-width: 1000px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px;
 }
 .sticky{
     display: inline-block;
@@ -361,6 +361,7 @@ footer span{
     color: white;
     text-align: center;
     height: 30px;
+    font-size: 14px;
 }
 
 
@@ -730,6 +731,18 @@ footer span{
     font-weight: 500;
     font-size: 13px;
 }
+.article textarea{
+    display: block;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    padding: 11px 20px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.article form img{
+    max-height: 30px;
+    position: absolute;
+}
 .form-group {
     width: 100%;
     margin: 10px 0;
@@ -754,6 +767,7 @@ footer span{
     background: #DDDDDD;
     color: #999;
     margin-right: 8px;
+    margin-bottom: 1px;
 }
 #submit {
     background: #ff6801;
@@ -770,6 +784,7 @@ footer span{
     border: none !important;
     cursor: pointer !important;
     text-align: center  ;
+
 }    
 
 

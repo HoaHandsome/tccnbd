@@ -94,9 +94,10 @@ function closeResponsiveMenu() {
     document.getElementById('bars').style.display ="inline-block";
 }
 /* reset form */
-function resetForm() {
-        document.getElementById('register-form').reset();
-}
+/* function resetForm(formName) {
+        var form = document.getElementById(formName);
+        form.reset();
+} */
 
 
 function validateEmail(email) {
@@ -211,29 +212,21 @@ function validateForm() {
                 alertify.message('Vui lòng nhập hơn 5 kí tự.');
             });
         return false;
+    } else{
+        
+            alertify.minimalDialog || alertify.dialog('minimalDialog', function () {
+                return {
+                    main: function (content) {
+                        this.setContent(content);
+                    }
+                };
+            });
+            alertify.minimalDialog("Cảm ơn bạn đã đăng ký.Chúng tôi sẽ cố gắng liên hệ với bạn sớm nhất có thể. NẾU CÓ VẤN ĐỀ VỀ SỰ CỐ DẪN TỚI VIỆC LIÊN LẠC CHO BẠN BỊ CHẬM TRỄ, BẠN CÓ THỂ LIÊN HỆ TRỰC TIẾP VỚI CHÚNG TÔI QUA SỐ HOTLINE (0274) 6280176 HOẶC BẠN CÓ THỂ LIÊN HỆ QUA FACEBOOK HOẶC ĐẾN TRỰC TIẾP TRUNG TÂM TRƯỜNG ĐỂ CÓ THỂ NGHE TƯ VẤN VÀ BIẾT THÊM VỀ CHƯƠNG TRÌNH HỌC. THÂN ÁI");
+            
+            return true;
+        
     }
 
     
 }
 
-
-var pre = document.createElement('pre');
-//custom style.
-pre.style.maxHeight = "400px";
-pre.style.margin = "0";
-pre.style.padding = "24px";
-pre.style.whiteSpace = "pre-wrap";
-pre.style.textAlign = "justify";
-pre.appendChild(document.getElementById('la').text());
-
-
-
-
-function test() {
-    alertify.confirm(pre, function () {
-        alertify.success('Accepted');
-    }, function () {
-        alertify.error('Declined');
-    }).set({ labels: { ok: 'Accept', cancel: 'Decline' }, padding: false });
-    
-}

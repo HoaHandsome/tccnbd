@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- modal alert  -->
+    <link rel="stylesheet" href="../css/alertify.css">
+    <link rel="stylesheet" href="../css/alertify.rtl.css">
+    <link rel="stylesheet" href="../css/themes/bootstrap.css">
+    <link rel="stylesheet" href="../css/themes/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../css/themes/default.rtl.css">
+    <link rel="stylesheet" href="../css/themes/default.min.css">
+    <link rel="stylesheet" href="../css/themes/default.rtl.min.css">
+    <link rel="stylesheet" href="../css/themes/semantic.css">
+    <link rel="stylesheet" href="../css/themes/semantic.rtl.min.css">
+
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-----------------------font icon  ------>
     <script src="https://kit.fontawesome.com/66e5d31267.js" crossorigin="anonymous"></script>
 
-<link rel="icon" type="image/x-icon" href="../img/logo.png">
-<title>Trường Trung cấp Công nghiệp Bình Dương</title>
+
+
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+   <title>Trường Trung cấp Công nghiệp Bình Dương</title>
 </head>
 
 <body>
@@ -53,7 +66,7 @@
             </div>
             <div>
                 <h6>Liên hệ</h6>
-                <a href="https://www.facebook.com/bdi.edu.vn">Follow chúng tôi trên FaceBook</a>
+             <a href="https://www.facebook.com/bdi.edu.vn">Follow chúng tôi trên FaceBook</a>
                 <div>
 
                     <a href="tel:+02746280176">
@@ -62,7 +75,7 @@
                 </div>
                 <div>
 
-                    <a href="mailto:truongtccnbd@gmail.com">Liên hệ qua mail</a>
+                    <a  href="mailto:truongtccnbd@gmail.com">Liên hệ qua mail</a>
                 </div>
             </div>
 
@@ -87,7 +100,6 @@
             </div>
         </div>
     </header>
-
 
 
 
@@ -129,7 +141,6 @@
 
     <!-- content -->
 
-
     <div id="home-content">
         <div class="container flex">
             <!-- left content 75%  -->
@@ -139,43 +150,86 @@
                         <h5><a href="#"><i class="fas fa-home"></i></a></h5>
                         <i class="fas fa-angle-double-right"></i>
                         <h6><a href="#">Gioi thieu</a></h6>
+                        <i class="fas fa-angle-double-right"></i>
+                        <h6><a href="#">Danh muc</a></h6>
                         </i>
                     </div>
 
-                    <h6>BAN GIÁM HIỆU </h6>
+                    <!-- view category list -->
+                    <div class="title-registration">
+                        Quý vị có thể gửi thư tới chúng tôi bằng cách hoàn tất biểu mẫu dưới đây. Để chúng tôi có thể trả lời thư của Quý vị,
+                        xin vui lòng khai báo đầy đủ.
+                    </div>
 
-                    <table class="list-table">
-                        <tr>
-                            <th>Chức vụ</th>
-                            <th>Họ và tên</th>
-                        </tr>
-                        <tr>
-                            <td>Hiệu Trưởng</td>
-                            <td>TS. Vũ Minh Hùng</td>
-                        </tr>
-                        <tr>
-                            <td>Hiệu Phó</td>
-                            <td>Bùi Quang Qúy</td>
-                        </tr>
-                        <tr>
-                            <td>Hiệu Phó</td>
-                            <td>Trần Chí Hùng</td>
-                        </tr>
-                    </table>
+                    <div>
+                        <form method="POST" class="register-form" id="contact-form" onsubmit=" return validateForm()"
+                            method="post">
+                            <!-- alert -->
+
+                            <h2>Form đăng ký thông tin.</h2>
+
+                            <div class="form-group">
+                                <label for="title">Tiêu đề:</label>
+                                <input type="text" name="ftitle" id="title" required placeholder="Tiêu đề cần gửi">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Họ và tên :</label>
+                                <input type="text" name="fname" id="name" placeholder="Họ và tên">
+                            </div>
 
 
-                    <span>Monday 25/11/2046</span>
-                    <div class="more-articles flex-column">
-                        <h5>Xem thêm</h5>
-                        <div>
-                            <h6><a href="#">Ban Giám hiệu</a><span>(13/07/2013)</span></h6>
-                        </div>
-                        <div>
-                            <h6><a href="#">Các phòng chức năng </a><span>(13/07/2013)</span></h6>
-                        </div>
-                        <div>
-                            <h6><a href="#">Các Khoa, Bộ môn chuyên ngành </a><span>(13/07/2013)</span></h6>
-                        </div>
+                            <div class="form-row">
+
+                                <div class="form-group">
+                                    <label for="email">Email :</label>
+                                    <input type="email" name="femail_iavim" id="email" placeholder="***@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại :</label>
+                                    <input type="text" name="fphone" id="phone" placeholder="0986*****">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="fpart">Gửi đến bộ phận:</label>
+                                <div class="form-select">
+                                    <select name="fpart" id="fpart">
+                                        <option value="0"></option>
+                                        <option value="1">Ban giám hiệu</option>
+                                        <option value="2">Phòng đào tạo</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="fcon">Tin nhắn của bạn :</label>
+                                <textarea name="fcon" id="fcon" cols="30" rows="10" ></textarea>
+                            </div>
+                                <div class="form-row">
+                                
+                                    <div class="form-group">
+                                        <label for="spam">Mã chống spam</label>
+                                        <input type="text" name="femail_iavim" id="spam" >
+                                    </div>
+                                    <div class="form-group center">
+                                        <img src="../img/ads.jpg" alt="">
+                                    </div>
+                                
+                                </div>
+
+
+
+
+
+
+                            <div class="form-submit">
+
+                                <input type="reset" value="Reset Form" class="submit" id="reset">
+                                <input type="submit" value="Đăng ký" class="submit" name="submit" id="submit">
+                            </div>
+                        </form>
+
+
                     </div>
 
                 </div>
@@ -289,6 +343,8 @@
     </div>
 
 </body>
+<script src="../js/alertify.js"></script>
+<script src="../js/alertify.min.js"></script>
 <script src="../js/script.js"></script>
 
 </html>
