@@ -117,10 +117,6 @@ function validateNumber(Number) {
     return valNumber.test(Number);
 }
 
-
-
-
-
 function validateForm() {
     var name = document.forms['register-form']['hoten'].value;
     var birthDate = document.forms['register-form']['ngaysinh'].value;
@@ -230,3 +226,51 @@ function validateForm() {
     
 }
 
+function validateFormContact(){
+    var title = document.forms['contact-form']['ftitle'].value;
+    var name = document.forms['contact-form']['fname'].value;
+    var email = document.forms['contact-form']['femail_iavim'].value;
+    var phone = document.forms['contact-form']['fphone'].value;
+    var fpart = document.forms['contact-form']['fpart'].value;
+    var fcon = document.forms['contact-form']['fcon'].value;
+    if (title.length < 5) {
+        alertify
+            .alert("Vui lòng nhập tiêu đề đầy đủ.", function () {
+                alertify.message('Vui lòng nhập tiêu đề dài hơn 5 kí tự');
+            });
+        return false;
+    } else if (name.length < 5) {
+        alertify
+            .alert("Vui lòng nhập tên đầy đủ.", function () {
+                alertify.message('Vui lòng nhập tên dài hơn 5 kí tự');
+            });
+        return false;
+    }else if (!validateEmail(email)) {
+        alertify
+            .alert("Vui lòng nhập đúng địa chỉ email.", function () {
+                alertify.message('Vui lòng nhập đúng địa chỉ email.');
+            });
+        return false;
+    } else if (!validatePhoneNumber(phone)) {
+        alertify
+            .alert("Vui lòng nhập đúng số điện thoại.", function () {
+                alertify.message('Vui lòng nhập đúng số điện thoại.');
+            });
+        return false;
+    }
+    else if (fpart == 0) {
+        alertify
+            .alert("Vui lòng chọn chuyên ngành học.", function () {
+                alertify.message('Vui lòng chọn chuyên ngành học.');
+            });
+        return false;
+    } else if (fcon.length < 15) {
+        alertify
+            .alert("Vui lòng nhập nội dung đầy đủ.", function () {
+                alertify.message('Vui lòng nhập nội dung dài hơn 15 kí tự');
+            });
+        return false;
+    }
+
+
+}
