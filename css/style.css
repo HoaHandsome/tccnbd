@@ -486,6 +486,9 @@ footer span{
     color: rgb(56, 43, 124);
 
 }
+#home-introduce #group-list-introduce{
+    margin-top:15px;
+}
 /* #home-introduce  .group-item{
     position: relative;
     width: 22%;
