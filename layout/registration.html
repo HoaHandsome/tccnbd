@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/alertify.css">
+    <link rel="stylesheet" href="../css/alertify.rtl.css">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +44,14 @@
         <img alt="" id="contentModal">
     </div>
 
+
+    <div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
 
 
 
@@ -128,11 +138,9 @@
         </div>
     </div>
     <!-- end menu -->
-
-
-
-
-
+    
+    <!-- content -->
+    
     <div id="home-content">
         <div class="container flex">
             <!-- left content 75%  -->
@@ -144,84 +152,86 @@
                         <h6><a href="#">Gioi thieu</a></h6>
                         <i class="fas fa-angle-double-right"></i>
                         <h6><a href="#">Danh muc</a></h6>
-                        </i>
-                    </div>
-
-                    <!-- view category list -->
+                    </i>
+                </div>
+                
+                <!-- view category list -->
                 <div   class="title-registration">
                     Đăng ký xét tuyển
                 </div>
-
+                
                 <div >
-                            <form method="POST" class="register-form" id="register-form">
+                    <form method="POST" class="register-form" id="register-form"  onsubmit=" return validateForm()" method="post">
+                        <!-- alert -->
+
                                 <h2>Form đăng ký học cho sinh viên.</h2>
-                                <div class="form-group">
+                              
                                     <div class="form-group">
                                         <label for="name">Họ và tên :</label>
-                                        <input type="text" name="hoten" id="name" required />
+                                        <input type="text" name="hoten" id="name" required placeholder="Nguyễn Văn A">
                                     </div>
                                     <div class="form-group">
                                         <label for="birth_date">Ngày sinh :</label>
-                                        <input type="text" name="ngaysinh" id="birth_date">
+                                        <input type="text" name="ngaysinh" id="birth_date" placeholder="01/01/1990">
                                     </div>
-                                </div>
+                              
                                 <div class="form-group">
                                     <label for="address">Địa chỉ :</label>
-                                    <input type="text" name="noisinh" id="address" required />
+                                    <input type="text" name="noisinh" id="address" required placeholder="Phường A, Huyện B, Thành Phố C">
                                 </div>
                                 
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="identity">Số CMND :</label>
-                                        <input type="text" name="cmnd" id="identity" required />
+                                        <input type="text" name="cmnd" id="identity" required placeholder="1904******">
                                     </div>
     
                                     <div class="form-group">
                                         <label for="phone">Số điện thoại :</label>
-                                        <input type="text" name="dienthoai" id="phone">
+                                        <input type="text" name="dienthoai" id="phone" placeholder="0986*****">
                                     </div>
 
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email :</label>
-                                    <input type="email" name="email" id="email" />
+                                    <input type="email" name="email" id="email" placeholder="***@gmail.com">
                                 </div>
                                 <div class="form-group">
                                     <label for="degree">Trình độ học vấn :</label>
                                     <div class="form-select">
                                         <select name="totnghiep" id="degree">
-                                            <option value=""></option>
+                                            <option value="0"></option>
                                             <option value="Tốt Nghiệp Cấp 2">Tốt nghiệp Cấp 2</option>
                                             <option value="Tốt Nghiệp Cấp 3">Tốt nghiệp cấp 3</option>
                                             <option value="Tốt nghiệp Trung Cấp">Tốt nghiệp Trung Cấp</option>
                                             <option value="Tốt nghiệp Trung Cấp">Tốt nghiệp Cao Đẳng</option>
                                         </select>
                                         <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                                    </div>
+                                    </div>      
                                 </div>
                                 <div class="form-group">
                                     <label for="school">Tốt Nghiệp Tại Trường :</label>
-                                    <input type="text" name="truong" id="school">
+                                    <input type="text" name="truong" id="school" placeholder="Trường ABC ***">
                                 </div>
                                 
                                 <div class="form-group">
                                     <label for="educational-system">Hệ đào tạo :</label>
                                     <div class="form-select">
-                                        <select name="hexettuyen" id="educational-system">
-                                            <option value=""></option>
-                                            <option value="0">Tốt nghiệp Cấp 2</option>
-                                            <option value="1">Trung cấp chính quy</option>
-                                            <option value="2">Liên thông cao đẳng</option>
-                                            <option value="3">Liên thông đại học</option>
+                                        <select name="hexettuyen" id="educational-system" >
+                                            <option value="0"></option>
+                                            <option value="1">Tốt nghiệp Cấp 2</option>
+                                            <option value="2">Trung cấp chính quy</option>
+                                            <option value="3">Liên thông cao đẳng</option>
+                                            <option value="4">Liên thông đại học</option>
                                         </select>
                                         <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="majors">Hệ đào tạo :</label>
+                                    <label for="majors">Chuyên ngành học :</label>
                                     <div class="form-select">
                                         <select name="chuyennganh" id="majors">
-                                            <option value=""></option>
+                                            <option value="0"></option>
                                             <option value="Công Nghệ Thông Tin">Công Nghê Thông Tin</option>
                                             <option value="Kế Toán">Kế Toán</option>
                                             <option value="Mầm Non">Mầm Non</option>
@@ -232,14 +242,33 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="accommodation">Nơi cư trú :</label>
-                                    <input type="text" name="noicutru" id="accommodation">
+                                    <input type="text" name="noicutru" id="accommodation" placeholder="Phường A, Huyện B, Thành Phố C">
                                 </div>
                                 <div class="form-submit">
                                     <div class="submit" id="reset" onclick="resetForm()">Reset All</div>
                                     <input type="submit" value="Đăng ký" class="submit" name="submit" id="submit" />
                                 </div>
                             </form>
-                            <div class="title-registration">
+                            <div id="la" >
+                            
+                                Cảm ơn bạn đã đăng ký.
+                            
+                                Copyright (c) 2020 Trường Trung Cấp Công Nghiệp Bình Dương
+                            
+                               Cảm ơn bạn đã đăng ký. Chúng tôi sẽ cố gắng liên hệ với bạn sớm nhất có thể.
+                               Chúng tôi tin rằng lựa chọn hôm nay của bạn hoàn toàn là chính xác. Với trang
+                               thiết bị cũng như một độ ngũ giàu kinh nghiệm trong việc giảng dạy. Chúng tôi
+                               sẽ giúp chắp cánh cho con đường học vấn cũng như sẽ là môi trường tạo tiền đề
+                               cho bạn đi xa hơn nữa trong tương lai.
+                               
+                               Đội ngũ ban giám hiệu nhà trường.
+
+                             NẾU CÓ VẤN ĐỀ VỀ SỰ CỐ DẪN TỚI VIỆC LIÊN LẠC CHO BẠN BỊ CHẬM TRỄ, BẠN CÓ THỂ LIÊN HỆ TRỰC
+                             TIẾP VỚI CHÚNG TÔI QUA SỐ HOTLINE (0274) 6280176 HOẶC BẠN CÓ THỂ LIÊN HỆ QUA FACEBOOK HOẶC
+                             ĐẾN TRỰC TIẾP TRUNG TÂM TRƯỜNG ĐỂ CÓ THỂ NGHE TƯ VẤN VÀ BIẾT THÊM VỀ CHƯƠNG TRÌNH HỌC.
+                             THÂN ÁI.
+                            </div>
+                            <div class="title-registration" onclick="test()">
                                 Form đăng ký của các bạn sẽ được gởi đến phòng tư vấn tuyển sinh. Chúng tôi sẽ phúc đáp trong thời gian sớm nhất.
                                 Xin chân thành cảm ơn.
                             </div>
@@ -350,6 +379,8 @@
     </footer>
 
 </body>
+<script src="../js/alertify.js"></script>
+<script src="../js/alertify.min.js"></script>
 <script src="../js/script.js"></script>
 
 </html>
