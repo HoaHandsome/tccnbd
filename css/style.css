@@ -990,4 +990,7 @@ footer span{
     #form-contact > div:first-child{
     width: 50%;
     }
+    .categories p{
+        font-size: 14px;
+    }
 }
