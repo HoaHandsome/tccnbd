@@ -233,6 +233,7 @@ function validateFormContact(){
     var phone = document.forms['contact-form']['fphone'].value;
     var fpart = document.forms['contact-form']['fpart'].value;
     var fcon = document.forms['contact-form']['fcon'].value;
+    
     if (title.length < 5) {
         alertify
             .alert("Vui lòng nhập tiêu đề đầy đủ.", function () {
