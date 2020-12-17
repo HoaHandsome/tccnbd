@@ -746,6 +746,7 @@ footer span{
 .article form img{
     max-height: 30px;
     position: absolute;
+    bottom: 7px;
 }
 .form-group {
     width: 100%;
@@ -759,7 +760,7 @@ footer span{
 .form-row .form-group {
     display: inline-block;
     width: calc(50% - 2px);
-    padding: 0 15px;
+    padding: 0px 5px;
     margin-bottom: 23px;
     position: relative;
 }  
@@ -1125,7 +1126,12 @@ footer span{
     .container-list-introduce li {
     list-style: none;
     padding: 0;
-}
+    }
+    #menu .container ul li a{
+        height: 40px;
+        line-height: 40px;
+        
+    }
      header h6{
         font-size: 14px;
     }
@@ -1147,4 +1153,8 @@ footer span{
     .categories p{
         font-size: 14px;
     }
+
+  .submit {
+    width: 115px !important;
+  }
 }
