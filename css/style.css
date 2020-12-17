@@ -218,6 +218,7 @@ header i{
     size: 16px;
     line-height: 24px;
     font-weight: 400;
+    margin-bottom:0;
 }
 #form-contact a {
     color:#ffffff;
@@ -230,9 +231,34 @@ header i{
     font-weight: 500;
 }
 #form-contact > div:first-child{
-    width: 60%;
+    width: 70%;
     margin-right: 10px;
 }
+#form-contact > div:last-child{
+    width: 30%;
+}
+
+#form-contact > div > div{
+    display:inline-block;
+    margin:5px;
+    /* icon contact  */
+}
+#form-contact > div > div a{
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border: 0.5px solid #ffffff;
+    border-radius: 5px;
+}
+#form-contact > div > div a:hover{
+    background-color: #ffffff;
+    color:#005fab;
+}
+
+
+
+
 #contact-top{
     background-color: #005fab;
 }
