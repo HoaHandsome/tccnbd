@@ -279,6 +279,10 @@ header i{
     border: 0.5px solid transparent;
     border-radius: 5px;
 }   
+#menu > .container > a{
+    /* icon home */
+    border: 1px solid rgb(233, 230, 230) !important;
+}
 #menu a:hover{
     background-color: rgba(0,0,0,0.2)
 }
@@ -451,7 +455,7 @@ footer span{
 /* introduce  */
 #home-introduce{
     border-bottom: 10px solid #1468BB;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     position: relative;
 }
 /* #home-introduce::after{
@@ -485,6 +489,7 @@ footer span{
 }
 #home-introduce #group-list-introduce{
     margin-top:15px;
+    justify-content: space-between;
 }
 /* #home-introduce  .group-item{
     position: relative;
@@ -599,6 +604,7 @@ footer span{
 #home-content-left{
     width: 75%;
     padding: 10px;
+    padding-left:0;
 }
 .home-news > h6{
     border-left: 5px solid rgb(22, 30, 97);
@@ -1090,6 +1096,9 @@ footer span{
 @media screen and (max-width: 450px) {
     .home-news ul {
     margin: 0px;
+    }
+    #home-introduce {
+    padding-bottom: 20px;
     }
 
    .home-news ul > li:first-child{
