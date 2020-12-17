@@ -1016,6 +1016,7 @@ footer span{
 #menu li{
     background-color: #005fab;
     border: 0.5px solid rgba(255, 255, 255, 0.5);
+    padding: 5px;
 
 }
 #menu .container > ul > li{
