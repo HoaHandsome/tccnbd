@@ -312,6 +312,11 @@ header i{
     /* icon home */
     border: 0.5px solid rgb(248, 243, 243) !important;
 }
+#menu > .container > a:hover{
+    /* icon home */
+    background-color:#ffffff;
+    color:
+}
 #menu a:hover{
     background-color: rgba(0,0,0,0.2);
     background-color: rgba(255,255,255,0.3);
