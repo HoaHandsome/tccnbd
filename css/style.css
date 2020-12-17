@@ -364,6 +364,9 @@ footer span{
     height: 30px;
     font-size: 14px;
 }
+#license p {
+    margin: 0;
+}
 
 
 
@@ -1130,7 +1133,7 @@ footer span{
     #menu .container ul li a{
         height: 40px;
         line-height: 40px;
-        
+
     }
      header h6{
         font-size: 14px;
