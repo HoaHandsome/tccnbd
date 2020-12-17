@@ -24,6 +24,7 @@ img{
 span{
     color: #FF6A67;
 }
+
 li{
     list-style: none;
 }
@@ -237,7 +238,7 @@ header i{
 }
 
 #logo{
-    background-color: none;
+    background-color: white;
 }
 
 
