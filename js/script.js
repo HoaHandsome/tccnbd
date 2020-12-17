@@ -84,6 +84,7 @@ function openResponsiveMenu() {
    header[0].style.display="none";
    document.getElementById('close').style.display="inline-block";
    document.getElementById('bars').style.display="none";
+   document.getElementById('logo').style.display="none";
 }
 function closeResponsiveMenu() {
    var ul=  Array.from(document.querySelectorAll('#menu ul'));
@@ -92,6 +93,7 @@ function closeResponsiveMenu() {
    header[0].style.display="block";
    document.getElementById('close').style.display="none";
     document.getElementById('bars').style.display ="inline-block";
+    document.getElementById('logo').style.display = "block";
 }
 /* reset form */
 /* function resetForm(formName) {

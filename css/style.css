@@ -188,11 +188,11 @@ alert{
 /*
 * === form search ===
 */
-
-
 header{
-    background-color: #393939;
+    background-color: #005fab;
 }
+
+
 header #form-contact{
    margin: 0 auto;
    padding: 10px;
@@ -204,14 +204,12 @@ header #form-contact{
 #close-form-contact{
     display: none;
 }
-header h5 a,header label{
-    color: #f2f2f2;
-}
+
 header i{
     cursor: pointer;
 }
 #logo img{
-    max-height: 30px;
+    max-height: auto;
 }
 
 #form-contact p{
@@ -234,8 +232,13 @@ header i{
     width: 60%;
     margin-right: 10px;
 }
+#contact-top{
+    background-color: #005fab;
+}
 
-
+#logo{
+    background-color: none;
+}
 
 
 /*
