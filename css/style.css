@@ -315,7 +315,7 @@ header i{
 #menu > .container > a:hover{
     /* icon home */
     background-color:#ffffff;
-    color:
+    color:#005fab;
 }
 #menu a:hover{
     background-color: rgba(0,0,0,0.2);
