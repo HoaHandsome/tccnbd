@@ -1214,4 +1214,7 @@ footer span{
   .submit {
     width: 115px !important;
   }
+  #form-contact > div{
+    width: 50%;
+}
 }
